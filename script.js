@@ -1,7 +1,11 @@
 'use strict';
 
 const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
-
+if (numberOfFilms >0) {
+console.log ("OKAY");
+} else {
+    console.log ("ERRoR");
+}
 
 const personalMovieDB = {
     count: numberOfFilms,
@@ -13,16 +17,28 @@ const personalMovieDB = {
 for (let i=1; i<=numberOfFilms;i++){
     if (numberOfFilms===1){
         const   a = prompt('Один из последних просмотренных фильмов?', ''),
-                b = prompt('На сколько оцените его?', '');
+                b = +prompt('На сколько оцените его?', '');
+                if (b >=0) {}
+                 else {
+                        console.log ("ERRoR");
+                    }
                 personalMovieDB.movies[a] = b;
                 break;
     }
 
     if (numberOfFilms===2){
         const   a = prompt('Один из последних просмотренных фильмов?', ''),
-                b = prompt('На сколько оцените его?', ''),
+                b = +prompt('На сколько оцените его?', ''),
                 c = prompt('Один из последних просмотренных фильмов?', ''),
-                d = prompt('На сколько оцените его?', '');
+                d = +prompt('На сколько оцените его?', '');
+                if (b >=0) {}
+                else {
+                       console.log ("ERRoR");
+                   }
+                   if (d >=0) {}
+                   else {
+                          console.log ("ERRoR");
+                      }
                 personalMovieDB.movies[a] = b;
                 personalMovieDB.movies[c] = d;
                 break;
@@ -30,11 +46,23 @@ for (let i=1; i<=numberOfFilms;i++){
 
     if (numberOfFilms===3){
         const   a = prompt('Один из последних просмотренных фильмов?', ''),
-                b = prompt('На сколько оцените его?', ''),
+                b = +prompt('На сколько оцените его?', ''),
                 c = prompt('Один из последних просмотренных фильмов?', ''),
-                d = prompt('На сколько оцените его?', ''),
+                d = +prompt('На сколько оцените его?', ''),
                 e = prompt('Один из последних просмотренных фильмов?', ''),
-                f = prompt('На сколько оцените его?', '');
+                f = +prompt('На сколько оцените его?', '');
+                if (b >=0) {}
+                else {
+                       console.log ("ERRoR");
+                   }
+                   if (d >=0) {}
+                   else {
+                          console.log ("ERRoR");
+                      }
+                      if (f >=0) {}
+                      else {
+                             console.log ("ERRoR");
+                         }
                 personalMovieDB.movies[a] = b;
                 personalMovieDB.movies[c] = d;
                 personalMovieDB.movies[e] = f;
@@ -43,13 +71,29 @@ for (let i=1; i<=numberOfFilms;i++){
 
     if (numberOfFilms===4){
         const   a = prompt('Один из последних просмотренных фильмов?', ''),
-                b = prompt('На сколько оцените его?', ''),
+                b = +prompt('На сколько оцените его?', ''),
                 c = prompt('Один из последних просмотренных фильмов?', ''),
-                d = prompt('На сколько оцените его?', ''),
+                d = +prompt('На сколько оцените его?', ''),
                 e = prompt('Один из последних просмотренных фильмов?', ''),
-                f = prompt('На сколько оцените его?', ''),
+                f = +prompt('На сколько оцените его?', ''),
                 j = prompt('Один из последних просмотренных фильмов?', ''),
-                k = prompt('На сколько оцените его?', '');
+                k = +prompt('На сколько оцените его?', '');
+                if (b >=0) {}
+                else {
+                       console.log ("ERRoR");
+                   }
+                   if (d >=0) {}
+                   else {
+                          console.log ("ERRoR");
+                      }
+                      if (f >=0) {}
+                      else {
+                             console.log ("ERRoR");
+                         }
+                         if (k >=0) {}
+                         else {
+                                console.log ("ERRoR");
+                            }
                 personalMovieDB.movies[a] = b;
                 personalMovieDB.movies[c] = d;
                 personalMovieDB.movies[e] = f;
